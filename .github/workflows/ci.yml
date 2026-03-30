@@ -25,3 +25,5 @@ jobs:
       run: |
         python --version
         echo "CI çalışıyor"
+
+        "teat"
