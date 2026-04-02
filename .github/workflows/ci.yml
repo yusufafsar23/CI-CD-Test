@@ -23,7 +23,7 @@ jobs:
 
     - name: Run basic check
       run: |
-        python train.py
+        python src/train.py
         echo "CI çalışıyor"
 
         
