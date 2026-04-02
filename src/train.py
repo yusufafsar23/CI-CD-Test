@@ -6,7 +6,7 @@ from sklearn.metrics import accuracy_score
 from sklearn.preprocessing import RobustScaler
 import joblib
 
-data = pd.read_csv("/Users/yusufafsar/Desktop/diabetes.csv")
+data = pd.read_csv("diabetes.csv")
 print(data.head())
 # 🔥 kritik kolonlar
 cols = ["Glucose", "BloodPressure", "SkinThickness", "Insulin", "BMI"]
