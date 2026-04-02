@@ -7,7 +7,7 @@ from sklearn.preprocessing import RobustScaler
 import joblib
 
 data = pd.read_csv("/Users/yusufafsar/Desktop/diabetes.csv")
-
+print(data.head())
 # 🔥 kritik kolonlar
 cols = ["Glucose", "BloodPressure", "SkinThickness", "Insulin", "BMI"]
 
@@ -25,7 +25,7 @@ print("NaN var mı?\n", data.isnull().sum())
 X = data.drop("Outcome", axis=1)
 y = data["Outcome"]
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=0)
 
 # 🔥 RobustScaler (outlier’a dayanıklı)
 scaler = RobustScaler()
