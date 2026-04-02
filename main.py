@@ -37,10 +37,10 @@ def predict(data: DiabetesInput):
     
 
     # predict
-    prediction = model.predict(input_data)[0]
+    prediction2 = model.predict(input_data)[0]
 
     # sonuç
     return {
-        "prediction": int(prediction),
-        "result": "Diabetic" if prediction == 1 else "Not Diabetic"
+        "prediction2": int(prediction),
+        "result": "Diabetic" if prediction2 == 1 else "Not Diabetic"
     }
